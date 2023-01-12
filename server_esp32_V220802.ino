@@ -32,7 +32,7 @@ HardwareSerial MySerial(2);
 //const char *ssid = "iSerius_Time";
 //const char *password =  "rahasia22aja";
 const char *ssid = "iSerius_TailQuarter";
-const char *password =  "alkat2113";
+const char *password =  "99999";
 
 const char *msg_toggle_led = "tL";
 const char *msg_get_led = "gL";
