@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>Timer Monitor</title>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="/bootstrap.min.css" rel="stylesheet" >
+<link href="/font-awesome.min.css" rel="stylesheet" >
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+  
+  <div class="snip1517">
+  
+	<div class="plan">
+		<canvas class="plan-led" id="led01" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo01" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >01</span>
+
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(910)">10 Detik</a></li>
+					<li><a onclick="timerz(911)">10 Menit</a></li>
+					<li><a onclick="timerz(912)">20 Menit</a></li>
+					<li><a onclick="timerz(913)">30 Menit</a></li>
+				</ul>
+		</div></div>
+  		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(801)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led02" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo02" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >02</span>
+				<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(920)">10 Detik</a></li>
+					<li><a onclick="timerz(921)">10 Menit</a></li>
+					<li><a onclick="timerz(922)">20 Menit</a></li>
+					<li><a onclick="timerz(923)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(802)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led03" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo03" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >03</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(930)">10 Detik</a></li>
+					<li><a onclick="timerz(931)">10 Menit</a></li>
+					<li><a onclick="timerz(932)">20 Menit</a></li>
+					<li><a onclick="timerz(933)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(803)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led04" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo04" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >04</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(940)">10 Detik</a></li>
+					<li><a onclick="timerz(941)">10 Menit</a></li>
+					<li><a onclick="timerz(942)">20 Menit</a></li>
+					<li><a onclick="timerz(943)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(804)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led05" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo05" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >05</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(950)">10 Detik</a></li>
+					<li><a onclick="timerz(951)">10 Menit</a></li>
+					<li><a onclick="timerz(952)">20 Menit</a></li>
+					<li><a onclick="timerz(953)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(805)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led06" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo06" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >06</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(960)">10 Detik</a></li>
+					<li><a onclick="timerz(961)">10 Menit</a></li>
+					<li><a onclick="timerz(962)">20 Menit</a></li>
+					<li><a onclick="timerz(963)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(806)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led07" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo07" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >07</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(970)">10 Detik</a></li>
+					<li><a onclick="timerz(971)">10 Menit</a></li>
+					<li><a onclick="timerz(972)">20 Menit</a></li>
+					<li><a onclick="timerz(973)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(807)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led08" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo08" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >08</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(980)">10 Detik</a></li>
+					<li><a onclick="timerz(981)">10 Menit</a></li>
+					<li><a onclick="timerz(982)">20 Menit</a></li>
+					<li><a onclick="timerz(983)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(808)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led09" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo09" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >09</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(990)">10 Detik</a></li>
+					<li><a onclick="timerz(991)">10 Menit</a></li>
+					<li><a onclick="timerz(992)">20 Menit</a></li>
+					<li><a onclick="timerz(993)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(809)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led10" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo10" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >10</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(100)">10 Detik</a></li>
+					<li><a onclick="timerz(101)">10 Menit</a></li>
+					<li><a onclick="timerz(102)">20 Menit</a></li>
+					<li><a onclick="timerz(103)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(810)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led11" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo11" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >11</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(110)">10 Detik</a></li>
+					<li><a onclick="timerz(111)">10 Menit</a></li>
+					<li><a onclick="timerz(112)">20 Menit</a></li>
+					<li><a onclick="timerz(113)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(811)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led12" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo12" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >12</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(120)">10 Detik</a></li>
+					<li><a onclick="timerz(121)">10 Menit</a></li>
+					<li><a onclick="timerz(122)">20 Menit</a></li>
+					<li><a onclick="timerz(123)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(812)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led13" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo13" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >13</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(130)">10 Detik</a></li>
+					<li><a onclick="timerz(131)">10 Menit</a></li>
+					<li><a onclick="timerz(132)">20 Menit</a></li>
+					<li><a onclick="timerz(133)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(813)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led14" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo14" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >14</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(140)">10 Detik</a></li>
+					<li><a onclick="timerz(141)">10 Menit</a></li>
+					<li><a onclick="timerz(142)">20 Menit</a></li>
+					<li><a onclick="timerz(143)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(814)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led15" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo15" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >15</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(150)">10 Detik</a></li>
+					<li><a onclick="timerz(151)">10 Menit</a></li>
+					<li><a onclick="timerz(152)">20 Menit</a></li>
+					<li><a onclick="timerz(153)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(815)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led16" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo16" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >16</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(160)">10 Detik</a></li>
+					<li><a onclick="timerz(161)">10 Menit</a></li>
+					<li><a onclick="timerz(162)">20 Menit</a></li>
+					<li><a onclick="timerz(163)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(816)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led17" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo17" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >17</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(170)">10 Detik</a></li>
+					<li><a onclick="timerz(171)">10 Menit</a></li>
+					<li><a onclick="timerz(172)">20 Menit</a></li>
+					<li><a onclick="timerz(173)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(817)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led18" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo18" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >18</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(180)">10 Detik</a></li>
+					<li><a onclick="timerz(181)">10 Menit</a></li>
+					<li><a onclick="timerz(182)">20 Menit</a></li>
+					<li><a onclick="timerz(183)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(818)" disabled>Stop</a></div>
+	</div>
+
+	<div class="plan">
+		<canvas class="plan-led" id="led19" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo19" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >19</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(190)">10 Detik</a></li>
+					<li><a onclick="timerz(191)">10 Menit</a></li>
+					<li><a onclick="timerz(192)">20 Menit</a></li>
+					<li><a onclick="timerz(193)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(819)" disabled>Stop</a></div>
+	</div>
+
+	<div class="plan">
+		<canvas class="plan-led" id="led20" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo20" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >20</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(200)">10 Detik</a></li>
+					<li><a onclick="timerz(201)">10 Menit</a></li>
+					<li><a onclick="timerz(202)">20 Menit</a></li>
+					<li><a onclick="timerz(203)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(820)" disabled>Stop</a></div>
+	</div>	
+	  
+	<div class="plan">
+		<canvas class="plan-led" id="led21" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo21" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >21</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(210)">10 Detik</a></li>
+					<li><a onclick="timerz(211)">10 Menit</a></li>
+					<li><a onclick="timerz(212)">20 Menit</a></li>
+					<li><a onclick="timerz(213)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(821)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led22" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo22" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >22</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(220)">10 Detik</a></li>
+					<li><a onclick="timerz(221)">10 Menit</a></li>
+					<li><a onclick="timerz(222)">20 Menit</a></li>
+					<li><a onclick="timerz(223)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(822)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led23" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo23" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >23</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(230)">10 Detik</a></li>
+					<li><a onclick="timerz(231)">10 Menit</a></li>
+					<li><a onclick="timerz(232)">20 Menit</a></li>
+					<li><a onclick="timerz(233)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(823)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led24" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo24" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >24</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(240)">10 Detik</a></li>
+					<li><a onclick="timerz(241)">10 Menit</a></li>
+					<li><a onclick="timerz(242)">20 Menit</a></li>
+					<li><a onclick="timerz(243)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(824)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led25" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo25" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >25</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(250)">10 Detik</a></li>
+					<li><a onclick="timerz(251)">10 Menit</a></li>
+					<li><a onclick="timerz(252)">20 Menit</a></li>
+					<li><a onclick="timerz(253)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(825)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led26" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo26" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >26</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(260)">10 Detik</a></li>
+					<li><a onclick="timerz(261)">10 Menit</a></li>
+					<li><a onclick="timerz(262)">20 Menit</a></li>
+					<li><a onclick="timerz(263)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(826)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led27" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo27" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >27</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(270)">10 Detik</a></li>
+					<li><a onclick="timerz(271)">10 Menit</a></li>
+					<li><a onclick="timerz(272)">20 Menit</a></li>
+					<li><a onclick="timerz(273)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(827)" disabled>Stop</a></div>
+	</div>
+	
+	<div class="plan">
+		<canvas class="plan-led" id="led28" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo28" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >28</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(280)">10 Detik</a></li>
+					<li><a onclick="timerz(281)">10 Menit</a></li>
+					<li><a onclick="timerz(282)">20 Menit</a></li>
+					<li><a onclick="timerz(283)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(828)" disabled>Stop</a></div>
+	</div>
+
+	<div class="plan">
+		<canvas class="plan-led" id="led29" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo29" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >29</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(290)">10 Detik</a></li>
+					<li><a onclick="timerz(291)">10 Menit</a></li>
+					<li><a onclick="timerz(292)">20 Menit</a></li>
+					<li><a onclick="timerz(293)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(829)" disabled>Stop</a></div>
+	</div>
+
+	<div class="plan">
+		<canvas class="plan-led" id="led30" width="35" height="28"></canvas>
+		<span class="plan-timer" id="demo30" ></span>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 15)" contenteditable="true" spellcheck="false">Nama : </div>
+		<div  class="plan-nama" onkeypress="return (this.innerText.length <= 13)" contenteditable="true" spellcheck="false">Kamar : </div>
+		<span class="plan-price" >30</span>
+		<div class="dropdown" ><a class="btn" id="toggleButton" >START</a> 
+		<div class="outer-list bottom">
+				<ul>
+					<li><a onclick="timerz(300)">10 Detik</a></li>
+					<li><a onclick="timerz(301)">10 Menit</a></li>
+					<li><a onclick="timerz(302)">20 Menit</a></li>
+					<li><a onclick="timerz(303)">30 Menit</a></li>
+				</ul>
+		</div></div>
+		<div class="plan-select" ><a id="toggleButton"   onclick="resetz(830)" disabled>Stop</a></div>
+	</div>	
+	   
+	   
+	  
+        <div class="plan"><canvas class="plan-led" id="led" width="50" height="50"></canvas>
+		<div class="plan-select" > <a id="toggleButton" onclick="onPress()" >Test</button></a></div>
+        </div>
+		
+	
+	
+	<div class="plan" >
+		<div  class="plan-namaz" id="result"></div>
+		<div  class="plan-namaz" id="diterima"></div>
+	</div>
+	
+
+		
+</div>
+</section>
+</body>
+
+</html>
+
+<script language="javascript" type="text/javascript">
+
+//var url = "ws://192.168.1.100:1337/";
+//var url = "ws://192.168.100.111:1337/";
+var url = "ws://10.10.10.200:1337/";
+var output;
+var button;
+var canvas;
+var context;
+var kirim;
+
+console.log = function(message) {
+    document.getElementById('result').innerHTML = message;
+};
+diterima.log = function(message) {
+    document.getElementById('diterima').innerHTML = message;
+};
+ 
+ 
+// This is called when the page finishes loading
+function init() {
+ 
+ 
+    // Assign page elements to variables
+    button = document.getElementById("toggleButton");
+	button = document.getElementById("toggleFU");
+  //  output = document.getElementById("01#T");
+    canvas = document.getElementById("led");
+	canvas00 = document.getElementById("led00");
+	canvas01 = document.getElementById("led01");
+	canvas02 = document.getElementById("led02");
+	canvas03 = document.getElementById("led03");
+	canvas04 = document.getElementById("led04");
+	canvas05 = document.getElementById("led05");
+	canvas06 = document.getElementById("led06");
+	canvas07 = document.getElementById("led07");
+	canvas08 = document.getElementById("led08");
+	canvas09 = document.getElementById("led09");
+	canvas10 = document.getElementById("led10");
+	canvas11 = document.getElementById("led11");
+	canvas12 = document.getElementById("led12");
+	canvas13 = document.getElementById("led13");
+	canvas14 = document.getElementById("led14");
+	canvas15 = document.getElementById("led15");
+	canvas16 = document.getElementById("led16");
+	canvas17 = document.getElementById("led17");
+	canvas18 = document.getElementById("led18");
+	canvas19 = document.getElementById("led19");
+	canvas20 = document.getElementById("led20");
+	canvas21 = document.getElementById("led21");
+	canvas22 = document.getElementById("led22");
+	canvas23 = document.getElementById("led23");
+	canvas24 = document.getElementById("led24");
+	canvas25 = document.getElementById("led25");
+	canvas26 = document.getElementById("led26");
+	canvas27 = document.getElementById("led27");
+	canvas28 = document.getElementById("led28");
+	canvas29 = document.getElementById("led29");
+	canvas30 = document.getElementById("led30");
+    
+    // Draw circle in canvas
+    context = canvas.getContext("2d");
+    context.arc(20, 20, 10, 0, Math.PI * 2, false);
+    context.lineWidth = 5;
+    context.strokeStyle = "black";
+    context.stroke();
+    context.fillStyle = "black";
+    context.fill();
+	
+    context01 = canvas01.getContext("2d");
+    context01.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context01.lineWidth = 5;
+    context01.strokeStyle = "black";
+    context01.stroke();
+    context01.fillStyle = "grey";
+    context01.fill();
+	
+	context02 = canvas02.getContext("2d");
+    context02.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context02.lineWidth = 5;
+    context02.strokeStyle = "black";
+    context02.stroke();
+    context02.fillStyle = "grey";
+    context02.fill();
+	
+    context03 = canvas03.getContext("2d");
+    context03.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context03.lineWidth = 5;
+    context03.strokeStyle = "black";
+    context03.stroke();
+    context03.fillStyle = "grey";
+    context03.fill();
+
+    context04 = canvas04.getContext("2d");
+    context04.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context04.lineWidth = 5;
+    context04.strokeStyle = "black";
+    context04.stroke();
+    context04.fillStyle = "grey";
+    context04.fill();
+
+    context05 = canvas05.getContext("2d");
+    context05.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context05.lineWidth = 5;
+    context05.strokeStyle = "black";
+    context05.stroke();
+    context05.fillStyle = "grey";
+    context05.fill();
+
+    context06 = canvas06.getContext("2d");
+    context06.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context06.lineWidth = 5;
+    context06.strokeStyle = "black";
+    context06.stroke();
+    context06.fillStyle = "grey";
+    context06.fill();
+
+    context07 = canvas07.getContext("2d");
+    context07.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context07.lineWidth = 5;
+    context07.strokeStyle = "black";
+    context07.stroke();
+    context07.fillStyle = "grey";
+    context07.fill();
+
+    context08 = canvas08.getContext("2d");
+    context08.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context08.lineWidth = 5;
+    context08.strokeStyle = "black";
+    context08.stroke();
+    context08.fillStyle = "grey";
+    context08.fill();
+
+    context09 = canvas09.getContext("2d");
+    context09.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context09.lineWidth = 5;
+    context09.strokeStyle = "black";
+    context09.stroke();
+    context09.fillStyle = "grey";
+    context09.fill();
+
+    context10 = canvas10.getContext("2d");
+    context10.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context10.lineWidth = 5;
+    context10.strokeStyle = "black";
+    context10.stroke();
+    context10.fillStyle = "grey";
+    context10.fill();
+
+    context11 = canvas11.getContext("2d");
+    context11.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context11.lineWidth = 5;
+    context11.strokeStyle = "black";
+    context11.stroke();
+    context11.fillStyle = "grey";
+    context11.fill();
+
+    context12 = canvas12.getContext("2d");
+    context12.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context12.lineWidth = 5;
+    context12.strokeStyle = "black";
+    context12.stroke();
+    context12.fillStyle = "grey";
+    context12.fill();
+
+    context13 = canvas13.getContext("2d");
+    context13.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context13.lineWidth = 5;
+    context13.strokeStyle = "black";
+    context13.stroke();
+    context13.fillStyle = "grey";
+    context13.fill();
+
+    context14 = canvas14.getContext("2d");
+    context14.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context14.lineWidth = 5;
+    context14.strokeStyle = "black";
+    context14.stroke();
+    context14.fillStyle = "grey";
+    context14.fill();
+
+    context15 = canvas15.getContext("2d");
+    context15.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context15.lineWidth = 5;
+    context15.strokeStyle = "black";
+    context15.stroke();
+    context15.fillStyle = "grey";
+    context15.fill();
+
+    context16 = canvas16.getContext("2d");
+    context16.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context16.lineWidth = 5;
+    context16.strokeStyle = "black";
+    context16.stroke();
+    context16.fillStyle = "grey";
+    context16.fill();
+
+    context17 = canvas17.getContext("2d");
+    context17.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context17.lineWidth = 5;
+    context17.strokeStyle = "black";
+    context17.stroke();
+    context17.fillStyle = "grey";
+    context17.fill();
+
+    context18 = canvas18.getContext("2d");
+    context18.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context18.lineWidth = 5;
+    context18.strokeStyle = "black";
+    context18.stroke();
+    context18.fillStyle = "grey";
+    context18.fill();
+
+    context19 = canvas19.getContext("2d");
+    context19.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context19.lineWidth = 5;
+    context19.strokeStyle = "black";
+    context19.stroke();
+    context19.fillStyle = "grey";
+    context19.fill();
+
+    context20 = canvas20.getContext("2d");
+    context20.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context20.lineWidth = 5;
+    context20.strokeStyle = "black";
+    context20.stroke();
+    context20.fillStyle = "grey";
+    context20.fill();
+
+    context21 = canvas21.getContext("2d");
+    context21.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context21.lineWidth = 5;
+    context21.strokeStyle = "black";
+    context21.stroke();
+    context21.fillStyle = "grey";
+    context21.fill();
+
+    context22 = canvas22.getContext("2d");
+    context22.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context22.lineWidth = 5;
+    context22.strokeStyle = "black";
+    context22.stroke();
+    context22.fillStyle = "grey";
+    context22.fill();
+
+    context23 = canvas23.getContext("2d");
+    context23.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context23.lineWidth = 5;
+    context23.strokeStyle = "black";
+    context23.stroke();
+    context23.fillStyle = "grey";
+    context23.fill();
+
+    context24 = canvas24.getContext("2d");
+    context24.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context24.lineWidth = 5;
+    context24.strokeStyle = "black";
+    context24.stroke();
+    context24.fillStyle = "grey";
+    context24.fill();
+
+    context25 = canvas25.getContext("2d");
+    context25.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context25.lineWidth = 5;
+    context25.strokeStyle = "black";
+    context25.stroke();
+    context25.fillStyle = "grey";
+    context25.fill();
+
+    context26 = canvas26.getContext("2d");
+    context26.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context26.lineWidth = 5;
+    context26.strokeStyle = "black";
+    context26.stroke();
+    context26.fillStyle = "grey";
+    context26.fill();
+
+    context27 = canvas27.getContext("2d");
+    context27.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context27.lineWidth = 5;
+    context27.strokeStyle = "black";
+    context27.stroke();
+    context27.fillStyle = "grey";
+    context27.fill();
+
+    context28 = canvas28.getContext("2d");
+    context28.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context28.lineWidth = 5;
+    context28.strokeStyle = "black";
+    context28.stroke();
+    context28.fillStyle = "grey";
+    context28.fill();
+
+    context29 = canvas29.getContext("2d");
+    context29.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context29.lineWidth = 5;
+    context29.strokeStyle = "black";
+    context29.stroke();
+    context29.fillStyle = "grey";
+    context29.fill();
+
+    context30 = canvas30.getContext("2d");
+    context30.arc(20, 14, 10, 0, Math.PI * 2, false);
+    context30.lineWidth = 5;
+    context30.strokeStyle = "black";
+    context30.stroke();
+    context30.fillStyle = "grey";
+    context30.fill();
+	
+    wsConnect(url);
+}
+
+function wsConnect(url) {
+    
+    websocket = new WebSocket(url);
+    websocket.onopen = function(evt) { onOpen(evt) };
+    websocket.onclose = function(evt) { onClose(evt) };
+    websocket.onmessage = function(evt) { onMessage(evt) };
+    websocket.onerror = function(evt) { onError(evt) };
+}
+ 
+function onOpen(evt) {
+    console.log("Connected");
+ //   button.disabled = false;
+    doSend("gL");
+}
+function onClose(evt) {
+    console.log("Disconnected");
+   // button.disabled = true;
+    setTimeout(function() { wsConnect(url) }, 3000);
+}
+function onMessage(evt) {
+
+	diterima.log(evt.data);
+    console.log("Received: " + evt.data);
+    switch(evt.data) {
+        case "0":
+            console.log(". . . . .");
+            context.fillStyle = "black";
+            context.fill();
+            break;
+        case "1":
+            console.log("Ready .....");
+            context.fillStyle = "lime";
+            context.fill();
+            break;
+			
+        case "01O":
+            console.log("Timer 01 is on");
+            context01.fillStyle = "lime";
+            context01.fill();
+            break;
+        case "01N":
+            console.log("01 is Active");
+            context01.fillStyle = "blue";
+            context01.fill();
+            break;	
+        case "01A":
+            console.log("Alarm 01 is On");
+            context01.fillStyle = "red";
+            context01.fill();
+            break;
+			
+        case "02O":
+            console.log("Timer 02 is on");
+            context02.fillStyle = "lime";
+            context02.fill();
+            break;
+        case "02N":
+            console.log("02 is Active");
+            context02.fillStyle = "blue";
+            context02.fill();
+            break;	
+        case "02A":
+            console.log("Alarm 02 is On");
+            context02.fillStyle = "red";
+            context02.fill();
+            break;	
+
+        case "03O":
+            console.log("Timer 03 is on");
+            context03.fillStyle = "lime";
+            context03.fill();
+            break;
+        case "03N":
+            console.log("03 is Active");
+            context03.fillStyle = "blue";
+            context03.fill();
+            break;	
+        case "03A":
+            console.log("Alarm 03 is On");
+            context03.fillStyle = "red";
+            context03.fill();
+            break;	
+
+        case "04O":
+            console.log("Timer 04 is on");
+            context04.fillStyle = "lime";
+            context04.fill();
+            break;
+        case "04N":
+            console.log("04 is Active");
+            context04.fillStyle = "blue";
+            context04.fill();
+            break;	
+        case "04A":
+            console.log("Alarm 04 is On");
+            context04.fillStyle = "red";
+            context04.fill();
+            break;	
+
+        case "05O":
+            console.log("Timer 05 is on");
+            context05.fillStyle = "lime";
+            context05.fill();
+            break;
+        case "05N":
+            console.log("05 is Active");
+            context05.fillStyle = "blue";
+            context05.fill();
+            break;	
+        case "05A":
+            console.log("Alarm 05 is On");
+            context05.fillStyle = "red";
+            context05.fill();
+            break;	
+			
+	    case "06O":
+            console.log("Timer 06 is on");
+            context06.fillStyle = "lime";
+            context06.fill();
+            break;
+        case "06N":
+            console.log("06 is Active");
+            context06.fillStyle = "blue";
+            context06.fill();
+            break;	
+        case "06A":
+            console.log("Alarm 06 is On");
+            context06.fillStyle = "red";
+            context06.fill();
+            break;	
+			
+			
+	    case "07O":
+            console.log("Timer 07 is on");
+            context07.fillStyle = "lime";
+            context07.fill();
+            break;
+        case "07N":
+            console.log("07 is Active");
+            context07.fillStyle = "blue";
+            context07.fill();
+            break;	
+        case "07A":
+            console.log("Alarm 07 is On");
+            context07.fillStyle = "red";
+            context07.fill();
+            break;	
+			
+			
+	    case "08O":
+            console.log("Timer 08 is on");
+            context08.fillStyle = "lime";
+            context08.fill();
+            break;
+        case "08N":
+            console.log("08 is Active");
+            context08.fillStyle = "blue";
+            context08.fill();
+            break;	
+        case "08A":
+            console.log("Alarm 08 is On");
+            context08.fillStyle = "red";
+            context08.fill();
+            break;	
+			
+
+	    case "09O":
+            console.log("Timer 09 is on");
+            context09.fillStyle = "lime";
+            context09.fill();
+            break;
+        case "09N":
+            console.log("09 is Active");
+            context09.fillStyle = "blue";
+            context09.fill();
+            break;	
+        case "09A":
+            console.log("Alarm 09 is On");
+            context09.fillStyle = "red";
+            context09.fill();
+            break;	
+
+
+	    case "10O":
+            console.log("Timer 10 is on");
+            context10.fillStyle = "lime";
+            context10.fill();
+            break;
+        case "10N":
+            console.log("10 is Active");
+            context10.fillStyle = "blue";
+            context10.fill();
+            break;	
+        case "10A":
+            console.log("Alarm 10 is On");
+            context10.fillStyle = "red";
+            context10.fill();
+            break;	
+
+
+	    case "11O":
+            console.log("Timer 11 is on");
+            context11.fillStyle = "lime";
+            context11.fill();
+            break;
+        case "11N":
+            console.log("11 is Active");
+            context11.fillStyle = "blue";
+            context11.fill();
+            break;	
+        case "11A":
+            console.log("Alarm 11 is On");
+            context11.fillStyle = "red";
+            context11.fill();
+            break;	
+
+
+	    case "12O":
+            console.log("Timer 12 is on");
+            context12.fillStyle = "lime";
+            context12.fill();
+            break;
+        case "12N":
+            console.log("12 is Active");
+            context12.fillStyle = "blue";
+            context12.fill();
+            break;	
+        case "12A":
+            console.log("Alarm 12 is On");
+            context12.fillStyle = "red";
+            context12.fill();
+            break;	
+			
+	    case "13O":
+            console.log("Timer 13 is on");
+            context13.fillStyle = "lime";
+            context13.fill();
+            break;
+        case "13N":
+            console.log("13 is Active");
+            context13.fillStyle = "blue";
+            context13.fill();
+            break;	
+        case "13A":
+            console.log("Alarm 13 is On");
+            context13.fillStyle = "red";
+            context13.fill();
+            break;	
+			
+			
+	    case "14O":
+            console.log("Timer 14 is on");
+            context14.fillStyle = "lime";
+            context14.fill();
+            break;
+        case "14N":
+            console.log("14 is Active");
+            context14.fillStyle = "blue";
+            context14.fill();
+            break;	
+        case "14A":
+            console.log("Alarm 14 is On");
+            context14.fillStyle = "red";
+            context14.fill();
+            break;	
+
+
+	    case "15O":
+            console.log("Timer 15 is on");
+            context15.fillStyle = "lime";
+            context15.fill();
+            break;
+        case "15N":
+            console.log("15 is Active");
+            context15.fillStyle = "blue";
+            context15.fill();
+            break;	
+        case "15A":
+            console.log("Alarm 15 is On");
+            context15.fillStyle = "red";
+            context15.fill();
+            break;	
+		
+	    case "16O":
+            console.log("Timer 16 is on");
+            context16.fillStyle = "lime";
+            context16.fill();
+            break;
+        case "16N":
+            console.log("16 is Active");
+            context16.fillStyle = "blue";
+            context16.fill();
+            break;	
+        case "16A":
+            console.log("Alarm 16 is On");
+            context16.fillStyle = "red";
+            context16.fill();
+            break;	
+
+			
+	    case "17O":
+            console.log("Timer 17 is on");
+            context17.fillStyle = "lime";
+            context17.fill();
+            break;
+        case "17N":
+            console.log("17 is Active");
+            context17.fillStyle = "blue";
+            context17.fill();
+            break;	
+        case "17A":
+            console.log("Alarm 17 is On");
+            context17.fillStyle = "red";
+            context17.fill();
+            break;
+
+
+	    case "18O":
+            console.log("Timer 18 is on");
+            context18.fillStyle = "lime";
+            context18.fill();
+            break;
+        case "18N":
+            console.log("18 is Active");
+            context18.fillStyle = "blue";
+            context18.fill();
+            break;	
+        case "18A":
+            console.log("Alarm 18 is On");
+            context18.fillStyle = "red";
+            context18.fill();
+            break;	
+
+
+	    case "19O":
+            console.log("Timer 19 is on");
+            context19.fillStyle = "lime";
+            context19.fill();
+            break;
+        case "19N":
+            console.log("19 is Active");
+            context19.fillStyle = "blue";
+            context19.fill();
+            break;	
+        case "19A":
+            console.log("Alarm 19 is On");
+            context19.fillStyle = "red";
+            context19.fill();
+            break;	
+
+	    case "20O":
+            console.log("Timer 20 is on");
+            context20.fillStyle = "lime";
+            context20.fill();
+            break;
+        case "20N":
+            console.log("20 is Active");
+            context20.fillStyle = "blue";
+            context20.fill();
+            break;	
+        case "20A":
+            console.log("Alarm 20 is On");
+            context20.fillStyle = "red";
+            context20.fill();
+            break;
+
+	    case "21O":
+            console.log("Timer 21 is on");
+            context21.fillStyle = "lime";
+            context21.fill();
+            break;
+        case "21N":
+            console.log("21 is Active");
+            context21.fillStyle = "blue";
+            context21.fill();
+            break;	
+        case "21A":
+            console.log("Alarm 21 is On");
+            context21.fillStyle = "red";
+            context21.fill();
+            break;	
+
+
+	    case "22O":
+            console.log("Timer 22 is on");
+            context22.fillStyle = "lime";
+            context22.fill();
+            break;
+        case "22N":
+            console.log("22 is Active");
+            context22.fillStyle = "blue";
+            context22.fill();
+            break;	
+        case "22A":
+            console.log("Alarm 22 is On");
+            context22.fillStyle = "red";
+            context22.fill();
+            break;	
+			
+	    case "23O":
+            console.log("Timer 23 is on");
+            context23.fillStyle = "lime";
+            context23.fill();
+            break;
+        case "23N":
+            console.log("23 is Active");
+            context23.fillStyle = "blue";
+            context23.fill();
+            break;	
+        case "23A":
+            console.log("Alarm 23 is On");
+            context23.fillStyle = "red";
+            context23.fill();
+            break;	
+			
+			
+	    case "24O":
+            console.log("Timer 24 is on");
+            context24.fillStyle = "lime";
+            context24.fill();
+            break;
+        case "24N":
+            console.log("24 is Active");
+            context24.fillStyle = "blue";
+            context24.fill();
+            break;	
+        case "24A":
+            console.log("Alarm 24 is On");
+            context24.fillStyle = "red";
+            context24.fill();
+            break;	
+
+
+	    case "25O":
+            console.log("Timer 25 is on");
+            context25.fillStyle = "lime";
+            context25.fill();
+            break;
+        case "25N":
+            console.log("25 is Active");
+            context25.fillStyle = "blue";
+            context25.fill();
+            break;	
+        case "25A":
+            console.log("Alarm 25 is On");
+            context25.fillStyle = "red";
+            context25.fill();
+            break;	
+		
+	    case "26O":
+            console.log("Timer 26 is on");
+            context26.fillStyle = "lime";
+            context26.fill();
+            break;
+        case "26N":
+            console.log("26 is Active");
+            context26.fillStyle = "blue";
+            context26.fill();
+            break;	
+        case "26A":
+            console.log("Alarm 26 is On");
+            context26.fillStyle = "red";
+            context26.fill();
+            break;	
+
+			
+	    case "27O":
+            console.log("Timer 27 is on");
+            context27.fillStyle = "lime";
+            context27.fill();
+            break;
+        case "27N":
+            console.log("27 is Active");
+            context27.fillStyle = "blue";
+            context27.fill();
+            break;	
+        case "27A":
+            console.log("Alarm 27 is On");
+            context27.fillStyle = "red";
+            context27.fill();
+            break;
+
+
+	    case "28O":
+            console.log("Timer 28 is on");
+            context28.fillStyle = "lime";
+            context28.fill();
+            break;
+        case "28N":
+            console.log("28 is Active");
+            context28.fillStyle = "blue";
+            context28.fill();
+            break;	
+        case "28A":
+            console.log("Alarm 28 is On");
+            context28.fillStyle = "red";
+            context28.fill();
+            break;	
+
+
+	    case "29O":
+            console.log("Timer 29 is on");
+            context29.fillStyle = "lime";
+            context29.fill();
+            break;
+        case "29N":
+            console.log("29 is Active");
+            context29.fillStyle = "blue";
+            context29.fill();
+            break;	
+        case "29A":
+            console.log("Alarm 29 is On");
+            context29.fillStyle = "red";
+            context29.fill();
+            break;	
+
+	    case "30O":
+            console.log("Timer 30 is on");
+            context30.fillStyle = "lime";
+            context30.fill();
+            break;
+        case "30N":
+            console.log("30 is Active");
+            context30.fillStyle = "blue";
+            context30.fill();
+            break;	
+        case "30A":
+            console.log("Alarm 30 is On");
+            context30.fillStyle = "red";
+            context30.fill();
+            break;
+
+	    case "01T":
+            console.log("Test 01 is on");
+            context01.fillStyle = "yellow";
+            context01.fill();
+            break;
+	    case "02T":
+            console.log("Test 02 is on");
+            context02.fillStyle = "yellow";
+            context02.fill();
+            break;
+	    case "03T":
+            console.log("Test 03 is on");
+            context03.fillStyle = "yellow";
+            context03.fill();
+            break;
+	    case "04T":
+            console.log("Test 04 is on");
+            context04.fillStyle = "yellow";
+            context04.fill();
+            break;
+	    case "05T":
+            console.log("Test 05 is on");
+            context05.fillStyle = "yellow";
+            context05.fill();
+            break;
+	    case "06T":
+            console.log("Test 06 is on");
+            context06.fillStyle = "yellow";
+            context06.fill();
+            break;
+	    case "07T":
+            console.log("Test 07 is on");
+            context07.fillStyle = "yellow";
+            context07.fill();
+            break;
+	    case "08T":
+            console.log("Test 08 is on");
+            context08.fillStyle = "yellow";
+            context08.fill();
+            break;
+	    case "09T":
+            console.log("Test 09 is on");
+            context09.fillStyle = "yellow";
+            context09.fill();
+            break;
+	    case "10T":
+            console.log("Test 10 is on");
+            context10.fillStyle = "yellow";
+            context10.fill();
+            break;	    
+	    case "11T":
+            console.log("Test 11 is on");
+            context11.fillStyle = "yellow";
+            context11.fill();
+            break;		
+	    case "12T":
+            console.log("Test 12 is on");
+            context12.fillStyle = "yellow";
+            context12.fill();
+            break;		
+		case "13T":
+            console.log("Test 13 is on");
+            context13.fillStyle = "yellow";
+            context13.fill();
+            break;
+	    case "14T":
+            console.log("Test 14 is on");
+            context14.fillStyle = "yellow";
+            context14.fill();
+            break;
+	    case "15T":
+            console.log("Test 15 is on");
+            context15.fillStyle = "yellow";
+            context15.fill();
+            break;
+	    case "16T":
+            console.log("Test 16 is on");
+            context16.fillStyle = "yellow";
+            context16.fill();
+            break;			
+	    case "17T":
+            console.log("Test 17 is on");
+            context17.fillStyle = "yellow";
+            context17.fill();
+            break;
+	    case "18T":
+            console.log("Test 18 is on");
+            context18.fillStyle = "yellow";
+            context18.fill();
+            break;
+	    case "19T":
+            console.log("Test 19 is on");
+            context19.fillStyle = "yellow";
+            context19.fill();
+            break;			
+	    case "20T":
+            console.log("Test 20 is on");
+            context20.fillStyle = "yellow";
+            context20.fill();
+            break;
+		case "21T":
+            console.log("Test 21 is on");
+            context21.fillStyle = "yellow";
+            context21.fill();
+            break;		
+	    case "22T":
+            console.log("Test 22 is on");
+            context22.fillStyle = "yellow";
+            context22.fill();
+            break;		
+		case "23T":
+            console.log("Test 23 is on");
+            context23.fillStyle = "yellow";
+            context23.fill();
+            break;
+	    case "24T":
+            console.log("Test 24 is on");
+            context24.fillStyle = "yellow";
+            context24.fill();
+            break;
+	    case "25T":
+            console.log("Test 25 is on");
+            context25.fillStyle = "yellow";
+            context25.fill();
+            break;
+	    case "26T":
+            console.log("Test 26 is on");
+            context26.fillStyle = "yellow";
+            context26.fill();
+            break;			
+	    case "27T":
+            console.log("Test 27 is on");
+            context27.fillStyle = "yellow";
+            context27.fill();
+            break;
+	    case "28T":
+            console.log("Test 28 is on");
+            context28.fillStyle = "yellow";
+            context28.fill();
+            break;
+	    case "29T":
+            console.log("Test 29 is on");
+            context29.fillStyle = "yellow";
+            context29.fill();
+            break;			
+	    case "30T":
+            console.log("Test 30 is on");
+            context30.fillStyle = "yellow";
+            context30.fill();
+            break;						
+			
+			
+        default:
+            break;
+    }
+}
+ 
+function onError(evt) {
+    console.log("ERROR: " + evt.data);
+}
+ 
+function doSend(message) {
+    console.log("Sending: " + message);
+    websocket.send(message);
+}
+ 
+function onPress() {
+    doSend("tL");
+    doSend("gL");
+}
+
+function onPijit1() {
+    doSend("FU1");
+}
+function onPijit3() {
+    doSend("FU3");
+}
+
+
+
+
+function timerz(a) {
+	console.log("broadcast: " + a);
+	websocket.send(a);
+	if(a==910){countdown( "demo01", 0, 11 , 1 )}
+	if(a==911){countdown( "demo01", 10, 0 , 1 )}
+	if(a==912){countdown( "demo01", 20, 0 , 1 )}
+	if(a==913){countdown( "demo01", 30, 0 , 1 )}
+	
+	if(a==920){countdown( "demo02", 0, 11 ,2 )}
+	if(a==921){countdown( "demo02", 10, 0 ,2 )}
+	if(a==922){countdown( "demo02", 20, 0 ,2 )}
+	if(a==923){countdown( "demo02", 30, 0 ,2 )}
+	
+	if(a==930){countdown( "demo03", 0, 11 ,3 )}
+	if(a==931){countdown( "demo03", 10, 0 ,3 )}
+	if(a==932){countdown( "demo03", 20, 0 ,3 )}
+	if(a==933){countdown( "demo03", 30, 0 ,3 )}
+	
+	if(a==940){countdown( "demo04", 0, 11 ,4 )}
+	if(a==941){countdown( "demo04", 10, 0 ,4 )}
+	if(a==942){countdown( "demo04", 20, 0 ,4 )}
+	if(a==943){countdown( "demo04", 30, 0 ,4 )}
+	
+	if(a==950){countdown( "demo05", 0, 11 ,5 )}
+	if(a==951){countdown( "demo05", 10, 0 ,5 )}
+	if(a==952){countdown( "demo05", 20, 0 ,5 )}
+	if(a==953){countdown( "demo05", 30, 0 ,5 )}
+
+	if(a==960){countdown( "demo06", 0, 11 ,6 )}
+	if(a==961){countdown( "demo06", 10, 0 ,6 )}
+	if(a==962){countdown( "demo06", 20, 0 ,6 )}
+	if(a==963){countdown( "demo06", 30, 0 ,6 )}
+	
+	if(a==970){countdown( "demo07", 0, 11 ,7 )}
+	if(a==971){countdown( "demo07", 10, 0 ,7 )}
+	if(a==972){countdown( "demo07", 20, 0 ,7 )}
+	if(a==973){countdown( "demo07", 30, 0 ,7 )}
+
+	if(a==980){countdown( "demo08", 0, 11 ,8 )}
+	if(a==981){countdown( "demo08", 10, 0 ,8 )}
+	if(a==982){countdown( "demo08", 20, 0 ,8 )}
+	if(a==983){countdown( "demo08", 30, 0 ,8 )}
+	
+	if(a==990){countdown( "demo09", 0, 11 ,9 )}
+	if(a==991){countdown( "demo09", 10, 0 ,9 )}
+	if(a==992){countdown( "demo09", 20, 0 ,9 )}
+	if(a==993){countdown( "demo09", 30, 0 ,9 )}
+
+	if(a==100){countdown( "demo10", 0, 11 ,10 )}
+	if(a==101){countdown( "demo10", 10, 0 ,10 )}
+	if(a==102){countdown( "demo10", 20, 0 ,10 )}
+	if(a==103){countdown( "demo10", 30, 0 ,10 )}
+	
+	if(a==110){countdown( "demo11", 0, 11 ,11 )}
+	if(a==111){countdown( "demo11", 10, 0 ,11 )}
+	if(a==112){countdown( "demo11", 20, 0 ,11 )}
+	if(a==113){countdown( "demo11", 30, 0 ,11 )}
+
+	if(a==120){countdown( "demo12", 0, 11 ,12 )}
+	if(a==121){countdown( "demo12", 10, 0 ,12 )}
+	if(a==122){countdown( "demo12", 20, 0 ,12 )}
+	if(a==123){countdown( "demo12", 30, 0 ,12 )}
+
+	if(a==130){countdown( "demo13", 0, 11 ,13 )}
+	if(a==131){countdown( "demo13", 10, 0 ,13 )}
+	if(a==132){countdown( "demo13", 20, 0 ,13 )}
+	if(a==133){countdown( "demo13", 30, 0 ,13 )}
+
+	if(a==140){countdown( "demo14", 0, 11 ,14 )}
+	if(a==141){countdown( "demo14", 10, 0 ,14 )}
+	if(a==142){countdown( "demo14", 20, 0 ,14 )}
+	if(a==143){countdown( "demo14", 30, 0 ,14 )}
+
+	if(a==150){countdown( "demo15", 0, 11 ,15 )}
+	if(a==151){countdown( "demo15", 10, 0 ,15 )}
+	if(a==152){countdown( "demo15", 20, 0 ,15 )}
+	if(a==153){countdown( "demo15", 30, 0 ,15 )}
+
+	if(a==160){countdown( "demo16", 0, 11 ,16 )}
+	if(a==161){countdown( "demo16", 10, 0 ,16 )}
+	if(a==162){countdown( "demo16", 20, 0 ,16 )}
+	if(a==163){countdown( "demo16", 30, 0 ,16 )}
+
+	if(a==170){countdown( "demo17", 0, 11 ,17 )}
+	if(a==171){countdown( "demo17", 10, 0 ,17 )}
+	if(a==172){countdown( "demo17", 20, 0 ,17 )}
+	if(a==173){countdown( "demo17", 30, 0 ,17 )}
+
+	if(a==180){countdown( "demo18", 0, 11 ,18 )}
+	if(a==181){countdown( "demo18", 10, 0 ,18 )}
+	if(a==182){countdown( "demo18", 20, 0 ,18 )}
+	if(a==183){countdown( "demo18", 30, 0 ,18 )}
+
+	if(a==190){countdown( "demo19", 0, 11 ,19 )}
+	if(a==191){countdown( "demo19", 10, 0 ,19 )}
+	if(a==192){countdown( "demo19", 20, 0 ,19 )}
+	if(a==193){countdown( "demo19", 30, 0 ,19 )}
+
+	if(a==200){countdown( "demo20", 0, 11 ,20 )}
+	if(a==201){countdown( "demo20", 10, 0 ,20 )}
+	if(a==202){countdown( "demo20", 20, 0 ,20 )}
+	if(a==203){countdown( "demo20", 30, 0 ,20 )}
+	
+	if(a==210){countdown( "demo21", 0, 11 ,21 )}
+	if(a==211){countdown( "demo21", 10, 0 ,21 )}
+	if(a==212){countdown( "demo21", 20, 0 ,21 )}
+	if(a==213){countdown( "demo21", 30, 0 ,21 )}
+
+	if(a==220){countdown( "demo22", 0, 11 ,22 )}
+	if(a==221){countdown( "demo22", 10, 0 ,22 )}
+	if(a==222){countdown( "demo22", 20, 0 ,22 )}
+	if(a==223){countdown( "demo22", 30, 0 ,22 )}
+
+	if(a==230){countdown( "demo23", 0, 11 ,23 )}
+	if(a==231){countdown( "demo23", 10, 0 ,23 )}
+	if(a==232){countdown( "demo23", 20, 0 ,23 )}
+	if(a==233){countdown( "demo23", 30, 0 ,23 )}
+
+	if(a==240){countdown( "demo24", 0, 11 ,24 )}
+	if(a==241){countdown( "demo24", 10, 0 ,24 )}
+	if(a==242){countdown( "demo24", 20, 0 ,24 )}
+	if(a==243){countdown( "demo24", 30, 0 ,24 )}
+
+	if(a==250){countdown( "demo25", 0, 11 ,25 )}
+	if(a==251){countdown( "demo25", 10, 0 ,25 )}
+	if(a==252){countdown( "demo25", 20, 0 ,25 )}
+	if(a==253){countdown( "demo25", 30, 0 ,25 )}
+
+	if(a==260){countdown( "demo26", 0, 11 ,26 )}
+	if(a==261){countdown( "demo26", 10, 0 ,26 )}
+	if(a==262){countdown( "demo26", 20, 0 ,26 )}
+	if(a==263){countdown( "demo26", 30, 0 ,26 )}
+
+	if(a==270){countdown( "demo27", 0, 11 ,27 )}
+	if(a==271){countdown( "demo27", 10, 0 ,27 )}
+	if(a==272){countdown( "demo27", 20, 0 ,27 )}
+	if(a==273){countdown( "demo27", 30, 0 ,27 )}
+
+	if(a==280){countdown( "demo28", 0, 11 ,28 )}
+	if(a==281){countdown( "demo28", 10, 0 ,28 )}
+	if(a==282){countdown( "demo28", 20, 0 ,28 )}
+	if(a==283){countdown( "demo28", 30, 0 ,28 )}
+
+	if(a==290){countdown( "demo29", 0, 11 ,29 )}
+	if(a==291){countdown( "demo29", 10, 0 ,29 )}
+	if(a==292){countdown( "demo29", 20, 0 ,29 )}
+	if(a==293){countdown( "demo29", 30, 0 ,29 )}
+
+	if(a==300){countdown( "demo30", 0, 11 ,30 )}
+	if(a==301){countdown( "demo30", 10, 0 ,30 )}
+	if(a==302){countdown( "demo30", 20, 0 ,30 )}
+	if(a==303){countdown( "demo30", 30, 0 ,30 )}	
+	
+	}
+// doSend("013");  9 is start bit  ==  013 is : client 01 alarm fo 30 minutes
+//         | |		8 is reset bit	== 01R is : client 01 reset
+//clientID-- ---minute	
+	
+function resetz(a) {
+	console.log("Sending: " + a);
+	websocket.send(a);
+	if(a==801){countdown( "demo01", 0, 0 , 1 );document.getElementById('demo01').innerHTML =" ";}
+	if(a==802){countdown( "demo02", 0, 0 , 2 );document.getElementById('demo02').innerHTML =" "}
+	if(a==803){countdown( "demo03", 0, 0 , 3 );document.getElementById('demo03').innerHTML =" "}
+	if(a==804){countdown( "demo04", 0, 0 , 4 );document.getElementById('demo04').innerHTML =" "}
+	if(a==805){countdown( "demo05", 0, 0 , 5 );document.getElementById('demo05').innerHTML =" "}
+	if(a==806){countdown( "demo06", 0, 0 , 6 );document.getElementById('demo06').innerHTML =" "}
+	if(a==807){countdown( "demo07", 0, 0 , 7 );document.getElementById('demo07').innerHTML =" "}
+	if(a==808){countdown( "demo08", 0, 0 , 8 );document.getElementById('demo08').innerHTML =" "}
+	if(a==809){countdown( "demo09", 0, 0 , 9 );document.getElementById('demo09').innerHTML =" "}
+	if(a==810){countdown( "demo10", 0, 0 , 10 );document.getElementById('demo10').innerHTML =" "}	
+	if(a==811){countdown( "demo11", 0, 0 , 11 );document.getElementById('demo11').innerHTML =" "}	
+	if(a==812){countdown( "demo12", 0, 0 , 12 );document.getElementById('demo12').innerHTML =" "}	
+	if(a==813){countdown( "demo13", 0, 0 , 13 );document.getElementById('demo13').innerHTML =" "}	
+	if(a==814){countdown( "demo14", 0, 0 , 14 );document.getElementById('demo14').innerHTML =" "}	
+	if(a==815){countdown( "demo15", 0, 0 , 15 );document.getElementById('demo15').innerHTML =" "}	
+	if(a==816){countdown( "demo16", 0, 0 , 16 );document.getElementById('demo16').innerHTML =" "}	
+	if(a==817){countdown( "demo17", 0, 0 , 17 );document.getElementById('demo17').innerHTML =" "}	
+	if(a==818){countdown( "demo18", 0, 0 , 18 );document.getElementById('demo18').innerHTML =" "}	
+	if(a==819){countdown( "demo19", 0, 0 , 19 );document.getElementById('demo19').innerHTML =" "}	
+	if(a==820){countdown( "demo20", 0, 0 , 20 );document.getElementById('demo20').innerHTML =" "}
+	if(a==821){countdown( "demo21", 0, 0 , 21 );document.getElementById('demo21').innerHTML =" "}	
+	if(a==822){countdown( "demo22", 0, 0 , 22 );document.getElementById('demo22').innerHTML =" "}	
+	if(a==823){countdown( "demo23", 0, 0 , 23 );document.getElementById('demo23').innerHTML =" "}	
+	if(a==824){countdown( "demo24", 0, 0 , 24 );document.getElementById('demo24').innerHTML =" "}	
+	if(a==825){countdown( "demo25", 0, 0 , 25 );document.getElementById('demo25').innerHTML =" "}	
+	if(a==826){countdown( "demo26", 0, 0 , 26 );document.getElementById('demo26').innerHTML =" "}	
+	if(a==827){countdown( "demo27", 0, 0 , 27 );document.getElementById('demo27').innerHTML =" "}	
+	if(a==828){countdown( "demo28", 0, 0 , 28 );document.getElementById('demo28').innerHTML =" "}	
+	if(a==829){countdown( "demo29", 0, 0 , 29 );document.getElementById('demo29').innerHTML =" "}	
+	if(a==830){countdown( "demo30", 0, 0 , 30 );document.getElementById('demo30').innerHTML =" "}
+}
+
+
+
+window.addEventListener("load", init, false);
+
+var timer = [];
+
+function countdown( elementName, menit, detik, nr )
+{
+	
+	if ( timer[nr] ) clearTimeout( timer[nr] );
+    var element, endTime, hours, mins, msLeft, time ;
+
+    function twoDigits( n )
+    {
+        return (n <= 9 ? "0" + n : n);
+    }
+
+    function updateTimer()
+    {
+        msLeft = endTime - (+new Date);
+        if ( msLeft < 1000 ) {
+			element.innerHTML = "Alarm"; 
+        } else {
+            time = new Date( msLeft );
+            hours = time.getUTCHours();
+            mins = time.getUTCMinutes();
+            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+            timer[nr] = setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+        }
+    }
+
+    element = document.getElementById( elementName );
+    endTime = (+new Date) + 1000 * (60*menit + detik) + 500;
+    updateTimer();
+}
+
+</script>
+
+
+<style>
+@import url(/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+.snip1517 {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  color: #ffffff;
+  text-align: left;
+  font-size: 18px;
+  width: 100%;
+ max-width: 1800px;
+  margin: 5px 5px;
+}
+
+.snip1517 .plan {
+  margin: 0.5% 0.5%;
+  width: 9%;
+  padding-top: 10px;
+  position: relative;
+  float: left;
+ overflow: hidden;
+  background-color: #222f3d;
+  border-radius: 8px;
+}
+
+.snip1517 .plan:hover i,
+.snip1517 .plan.hover i {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+.snip1517 header {
+  color: #ffffff;
+}
+
+.snip1517 .plan-led {
+  border-top: 0px solid rgba(0, 0, 0, 0.9);
+  color: #ffffee;
+  font-size: 1em;
+  padding: 0px;
+  text-align: center;
+  opacity: 50%
+  display:inline;
+}
+
+
+.snip1517 .plan-price {
+  align-items: center;
+  justify-content: center;
+  line-height: 60px;
+  font-size: 4em;
+  font-weight: 300;
+
+}
+
+.snip1517 .plan-timer {
+  line-height: 28px;
+  width: 100%;
+  position: absolute;
+  padding: 0 10px;
+  font-size: 2em;
+ }
+
+.snip1517 .plan-type {
+  opacity: 0.8;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+
+.snip1517 .plan-nama {
+  border-top: 0px solid rgba(0, 0, 0, 0.9);
+ background-color: #222f3d;
+  color: #dddddd;
+  font-size: 0.95em;
+  padding: 0px;
+       overflow: hidden;
+    cursor : pointer;
+	display: flex;
+    flex-direction: row;text-align: center; 
+  
+}
+
+.snip1517 .plan-namaz {
+  border-top: 0px solid rgba(0, 0, 0, 0.9);
+  background-color: #222f3d;
+  color: #3d3d3d;
+  font-size: 1em;
+  padding: 3px;
+  overflow: hidden;
+  width: 99%;
+ }
+
+
+.snip1517 .plan-select {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  text-align: center;
+  cursor : pointer;
+}
+
+
+.snip1517 .plan-select a {
+  background-color: #156dab;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 20px; 
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: inline-block;
+}
+.snip1517 .plan-select a:hover {
+  background-color: #fb3a38 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .snip1517 .plan {
+    width: 49%;
+    margin: 0.5%;
+  }
+
+  .snip1517 .plan-select,
+  .snip1517 .featured .plan-select {
+    padding: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 440px) {
+  .snip1517 .plan {
+    margin: 0.5% 0;
+    width: 100%;
+  }
+}
+
+
+/* Demo purposes only */
+
+body {
+  background-color: #212121;
+}
+
+.dropdown {
+  padding: 10px;
+  text-align: center;
+  cursor : pointer;
+  position: relative;
+  padding: 0.2em 0.2em;
+  
+}
+
+.dropdown > .outer-list {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.35s ease;
+}
+
+.dropdown > .outer-list.top {
+  align-items: flex-start;
+  transform-origin: 50% 0;
+}
+
+.dropdown > .outer-list.left { justify-content: flex-start; }
+
+.dropdown > .outer-list.bottom {
+  align-items: flex-end;
+  transform-origin: 50% 100%;
+}
+
+.dropdown > .outer-list.right { justify-content: flex-end; }
+
+.dropdown > .outer-list > ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+  border-radius: .2em;
+}
+
+.dropdown > .outer-list > ul li {
+  padding: .25em 0.5em;
+  margin: .25em;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.35s ease;
+}
+
+.dropdown > .outer-list > ul li:hover { background: rgba(0, 0, 0, 0.07); }
+
+.btn {
+  font-size: 19px;
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #03A9F4;
+  color: #fff;
+  border-radius: .55em;
+  transition: all 0.35s ease;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  text-align: center;
+  cursor : pointer;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  right: -50%;
+  z-index: 1;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+ 
+  background: rgba(255, 255, 255, 0.35);
+  transition: all 0.35s ease;
+  
+  
+}
+
+.btn:active:after,
+.btn.dropdown-open:after {
+  width: 200%;
+  height: 200%;
+}
+
+.btn:hover { box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.1); 
+background-color: #3bfa38 !important;
+}
+
+.btn.dropdown-open + .outer-list {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+</style>
+ 
+ 
+
+<script language="JavaScript">
+  /**
+    * Disable right-click of mouse, F12 key, and save key combinations on page
+    * By Arthur Gareginyan (arthurgareginyan@gmail.com)
+    * For full source code, visit https://mycyberuniverse.com
+    */
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+
+<script>
+(function() {
+
+  var _btns = document.querySelectorAll('.btn'),
+
+    _eachBtn = function(callback) {
+      Array.prototype.forEach.call(_btns, function(elem) {
+        callback.call(this, elem);
+      });
+    },
+    _initListener = function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      _eachBtn(function(btn) {
+        btn.classList.remove('dropdown-open')
+      });
+      this.classList.toggle('dropdown-open');
+    },
+    _hideAll = function() {
+      _eachBtn(function(btn) {
+        btn.classList.remove('dropdown-open');
+      });
+    };
+
+  _eachBtn(function(btn) {
+    btn.addEventListener('touchend', function(e) {
+      _initListener.call(this, e);
+    });
+
+    btn.addEventListener('click', function(e) {
+      _initListener.call(this, e);
+    });
+  });
+
+  document.addEventListener('touchend', function() {
+    _hideAll();
+  });
+  
+  document.addEventListener('click', function() {
+    _hideAll();
+  });
+
+})();
+
+</script>
